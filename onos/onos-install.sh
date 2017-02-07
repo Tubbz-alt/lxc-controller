@@ -23,14 +23,10 @@ cd
 sudo apt-get install -y git
 git clone https://gerrit.onosproject.org/onos
 
-# Set ONOS version
-
-git checkout onos-1.8
-
 # Set configurations
 
 . ~/onos/tools/dev/bash_profile
-cp cell/testbed ~/onos/tools/test/cells
+cp ~/lxc-controller/onos/cell/testbed ~/onos/tools/test/cells
 
 echo >> ~/.bashrc
 echo ". ~/onos/tools/dev/bash_profile" >> ~/.bashrc
@@ -40,10 +36,6 @@ echo "cell testbed" >> ~/.bashrc
 
 cd ~/onos
 mvn clean install
-
-# ONOS package
-
-op
 
 # Dependencies
 

@@ -5,7 +5,6 @@ lxc.network.link = conbr0
 lxc.network.hwaddr = 00:16:3e:3d:15:0c
 lxc.network.ipv4 = 10.0.0.11/24
 
-
 lxc.network.type = veth
 lxc.network.flags = up
 lxc.network.link = swbr0
