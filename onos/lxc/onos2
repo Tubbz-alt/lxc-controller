@@ -1,0 +1,12 @@
+
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.link = conbr0
+lxc.network.hwaddr = 00:16:3e:37:c1:75
+lxc.network.ipv4 = 10.0.0.12/24
+
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.link = swbr0
+lxc.network.hwaddr = 00:16:3e:37:c1:76
+lxc.network.ipv4 = 192.168.0.12/24

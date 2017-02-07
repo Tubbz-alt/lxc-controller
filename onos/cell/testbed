@@ -1,0 +1,8 @@
+export ONOS_NIC=10.0.0.*
+export OC1=10.0.0.11
+export OC2=10.0.0.12
+export OC3=10.0.0.13
+export OCI=$OC1
+export ONOS_APPS="drivers,openflow,fwd"
+export ONOS_USER=ubuntu
+export ONOS_GROUP=ubuntu
