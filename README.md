@@ -41,3 +41,6 @@ LXC-based controller environment
   Run 'onos-push-keys $OC3'<br />
   Run 'stc teardown'<br />
   Run 'stc setup'<br />
+
+# Requirement
+Need at least two interfaces for the control plane and the data plane respectively
