@@ -3,7 +3,7 @@
 PASSWD=password
 
 PS3="Please choose a switch: "
-select option in hp pica1 pica2 pica3 pica4 exit
+select option in hp arista pica1 pica2 pica3 pica4 exit
 do
 	case $option in
 	hp)
