@@ -43,4 +43,5 @@ LXC-based controller environment
   Run 'stc setup'<br />
 
 # Requirement
-Need at least two interfaces for the control plane and the data plane respectively
+Use Ubuntu 14.04<br />
+Need at least two interfaces for the control plane and the data plane respectively<br />
