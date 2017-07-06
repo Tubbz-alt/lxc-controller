@@ -22,6 +22,9 @@ sudo apt-get install -y oracle-java8-installer oracle-java8-set-default
 cd
 sudo apt-get install -y git
 git clone https://gerrit.onosproject.org/onos
+cd onos
+git checkout -b onos-1.9
+git pull
 
 # Set configurations
 
