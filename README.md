@@ -6,7 +6,7 @@ LXC-based controller environment
 
 	./step1.sh<br />
   
-  Attach '[user_id] ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
+  Add '[user_id] ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
   Set conbr0 and swbr0 in /etc/network/interfaces and reboot the system<br />
   (see sample/interfaces as a reference)<br />
 
@@ -14,24 +14,24 @@ LXC-based controller environment
 
 	./step2.sh<br />
 
-  Attach ~/lxc-controller/onos/lxc/onos1 at the end of /var/lib/lxc/onos1/config<br />
-  Attach ~/lxc-controller/onos/lxc/onos2 at the end of /var/lib/lxc/onos2/config<br />
-  Attach ~/lxc-controller/onos/lxc/onos3 at the end of /var/lib/lxc/onos3/config<br />
+  Add the contents of ~/lxc-controller/onos/lxc/onos1 at the end of /var/lib/lxc/onos1/config<br />
+  Add the contents of ~/lxc-controller/onos/lxc/onos2 at the end of /var/lib/lxc/onos2/config<br />
+  Add the contents of ~/lxc-controller/onos/lxc/onos3 at the end of /var/lib/lxc/onos3/config<br />
 
   Run ~/lxc-start.sh<br />
 
   Run ~/lxc-attach.sh onos1<br />
-    Attach 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
+    Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
     Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
     Set eth0 with a static IP address<br />
 
   Run ~/lxc-attach.sh onos2<br />
-    Attach 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
+    Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
     Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
     Set eth0 with a static IP address<br />
 
   Run ~/lxc-attach.sh onos3<br />
-    Attach 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
+    Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
     Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
     Set eth0 with a static IP address<br />
 
