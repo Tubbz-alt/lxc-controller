@@ -7,7 +7,7 @@ LXC-based SDN controller environment
 	./step1.sh<br />
   
   - Add '[user_id] ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
-  - Set conbr0 and swbr0 in /etc/network/interfaces and reboot the system (see sample/interfaces)<br />
+  - Set conbr0 and swbr0 in /etc/network/interfaces and reboot the system (see samples/interfaces)<br />
 
 2. Run step2.sh to create a lxc containers and install ONOS<br />
 
