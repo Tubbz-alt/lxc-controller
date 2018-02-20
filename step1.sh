@@ -2,7 +2,7 @@
 
 # install lxc
 
-install/lxc-install.sh
+setup/lxc-install.sh
 
 # set bridges and reboot
 
