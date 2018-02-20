@@ -1,7 +1,7 @@
 # lxc-controller
 LXC-based SDN controller environment
 
-# Introduction
+# Instruction
 1. Run step1.sh to install LXC<br />
 
 	./step1.sh<br />
