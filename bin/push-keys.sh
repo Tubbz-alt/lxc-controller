@@ -14,4 +14,5 @@ cat ~/.ssh/id_rsa.pub | ssh -p $PORT $1 "
     mv ~/.ssh/authorized_keys.bak ~/.ssh/authorized_keys
     chmod 600 ~/.ssh/authorized_keys
 "
+
 ssh -p $PORT -n -o PasswordAuthentication=no $1 true

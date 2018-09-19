@@ -22,17 +22,17 @@ LXC-based SDN controller environment
 4. Run ~/lxc-attach.sh onos1<br />
   - Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
   - Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
-  - Set eth0 with a static IP address<br />
+  - Set eth0 with a static IP address (10.0.0.11)<br />
 
 5. Run ~/lxc-attach.sh onos2<br />
   - Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
   - Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
-  - Set eth0 with a static IP address<br />
+  - Set eth0 with a static IP address (10.0.0.12)<br />
 
 6. Run ~/lxc-attach.sh onos3<br />
   - Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
   - Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
-  - Set eth0 with a static IP address<br />
+  - Set eth0 with a static IP address (10.0.0.13)<br />
 
 7. Run 'onos-package'<br />
 8. Run 'onos-push-keys $OC1'<br />
