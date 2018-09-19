@@ -19,8 +19,9 @@ echo "Add the contents of ~/lxc-controller/onos/lxc/onos1 at the end of /var/lib
 echo "Add the contents of ~/lxc-controller/onos/lxc/onos2 at the end of /var/lib/lxc/onos2/config"
 echo "Add the contents of ~/lxc-controller/onos/lxc/onos3 at the end of /var/lib/lxc/onos3/config"
 echo
-echo "Start onos1, onos2, and onos3 containers"
+echo "Start onos1, onos2, and onos3 containers (~/lxc-start.sh)"
 echo
+echo "Attach to each onos instance (~/lxc-attach.sh onos{1,2,3})"
 echo "Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers"
 echo "Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)"
 echo "Set eth0 with a static IP address in each container"
