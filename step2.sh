@@ -10,7 +10,7 @@ onos/onos-install.sh
 
 # copy lxc-related scripts to HOME
 
-cp bin/* ~
+cp bin/*.sh ~
 
 # update environment variables
 
