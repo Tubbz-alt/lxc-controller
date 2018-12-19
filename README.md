@@ -13,21 +13,19 @@ LXC-based SDN controller environment
 
 	./step2.sh<br />
 
-3. Run ~/lxc-start.sh<br />
-
-4. Run ~/lxc-attach.sh onos1<br />
+3. Run ~/lxc-attach.sh onos1<br />
   - Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
   - Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
 
-5. Run ~/lxc-attach.sh onos2<br />
+4. Run ~/lxc-attach.sh onos2<br />
   - Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
   - Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
 
-6. Run ~/lxc-attach.sh onos3<br />
+5. Run ~/lxc-attach.sh onos3<br />
   - Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers<br />
   - Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)<br />
 
-7. Run 'stc setup'<br />
+6. Run 'stc setup'<br />
 
 # Requirement
 Optimized for Ubuntu 14.04<br />
