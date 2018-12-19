@@ -12,25 +12,33 @@ onos/onos-install.sh
 
 cp bin/* ~
 
+# build an ONOS package
+
+cd ~
+onos-package
+
+# push SSH keys
+
+onos-push-keys $OC1
+onos-push-keys $OC2
+onos-push-keys $OC3
+
 # add onos configurations to the configuration of each containter
 
-echo
-echo "Add the contents of ~/lxc-controller/onos/lxc/onos1 at the end of /var/lib/lxc/onos1/config"
-echo "Add the contents of ~/lxc-controller/onos/lxc/onos2 at the end of /var/lib/lxc/onos2/config"
-echo "Add the contents of ~/lxc-controller/onos/lxc/onos3 at the end of /var/lib/lxc/onos3/config"
-echo
-echo "Start onos1, onos2, and onos3 containers (~/lxc-start.sh)"
+cat ~/lxc-controller/onos/lxc/onos1 | sudo tee -a /var/lib/lxc/onos1/config
+cat ~/lxc-controller/onos/lxc/onos2 | sudo tee -a /var/lib/lxc/onos2/config
+cat ~/lxc-controller/onos/lxc/onos3 | sudo tee -a /var/lib/lxc/onos3/config
+
+# start ONOS containers
+
+~/lxc-start.sh
+
+# do things in manual
+
 echo
 echo "Attach to each onos instance (~/lxc-attach.sh onos{1,2,3})"
 echo "Add 'ubuntu ALL=NOPASSWD:ALL' at the end of /etc/sudoers"
 echo "Install Oracle Java 8 (see ~/lxc-controller/onos/java-install.sh)"
-echo "Set eth0 with a static IP address in each container"
-echo
-echo "$ onos-package"
-echo
-echo "$ onos-push-keys $OC1"
-echo "$ onos-push-keys $OC2"
-echo "$ onos-push-keys $OC3"
 echo
 echo "$ stc teardown"
 echo "$ stc setup"
