@@ -1,5 +1,5 @@
-auto eth0
-iface eth0 inet manual
+auto eth1
+iface eth1 inet manual
 
 auto conbr0
 iface conbr0 inet static
@@ -7,19 +7,13 @@ iface conbr0 inet static
         netmask 255.255.255.0
         network 10.0.0.0
         broadcast 10.0.0.255
-        bridge_ports eth0
+        bridge_ports eth1
         bridge_fd 9
         bridge_hello 2
         bridge_maxage 12
         bridge_stp off
 
-auto eth1
-iface eth0 inet manual
-
 auto eth2
-iface eth1 inet manual
-
-auto eth3
 iface eth2 inet manual
 
 auto swbr0
@@ -28,7 +22,7 @@ iface swbr0 inet static
         netmask 255.255.255.0
         network 192.168.0.0
         broadcast 192.168.0.255
-        bridge_ports eth1 eth2 eth3
+        bridge_ports eth2
         bridge_fd 9
         bridge_hello 2
         bridge_maxage 12
