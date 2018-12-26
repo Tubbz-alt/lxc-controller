@@ -2,9 +2,7 @@
 
 # karaf and maven
 
-cd
-mkdir Downloads Applications
-cd Downloads
+cd ~; mkdir Downloads Applications; cd Downloads
 wget http://archive.apache.org/dist/karaf/3.0.5/apache-karaf-3.0.5.tar.gz
 wget http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
 tar -zxvf apache-karaf-3.0.5.tar.gz -C ../Applications/
@@ -19,10 +17,9 @@ sudo apt-get install -y oracle-java8-installer oracle-java8-set-default
 
 # ONOS source code (v1.6)
 
-cd
+cd ~
 sudo apt-get install -y git
 git clone -b onos-1.6 https://github.com/opennetworkinglab/onos
-cd onos
 
 # Set configurations
 

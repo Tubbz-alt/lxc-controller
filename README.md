@@ -29,4 +29,4 @@ LXC-based SDN controller environment
 
 # Requirement
 Optimized for Ubuntu 14.04<br />
-Need at least two interfaces for the control plane and the data plane respectively<br />
+Need at least two interfaces for the control and data planes respectively<br />
