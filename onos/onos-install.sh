@@ -10,10 +10,7 @@ tar -zxvf apache-maven-3.3.9-bin.tar.gz -C ../Applications/
 
 # Oracle java 8
 
-sudo apt-get install -y software-properties-common
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install -y oracle-java8-installer oracle-java8-set-default
+./java-install.sh
 
 # ONOS source code (v1.6)
 
