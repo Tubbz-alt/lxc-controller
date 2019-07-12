@@ -8,10 +8,6 @@ wget http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.
 tar -zxvf apache-karaf-3.0.5.tar.gz -C ../Applications/
 tar -zxvf apache-maven-3.3.9-bin.tar.gz -C ../Applications/
 
-# Oracle java 8
-
-./java-install.sh
-
 # ONOS source code (v1.6)
 
 cd ~

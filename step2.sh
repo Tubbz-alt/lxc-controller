@@ -4,6 +4,10 @@
 
 onos/onos-lxc.sh
 
+# Oracle java 8
+
+onos/java-install.sh
+
 # install ONOS
 
 onos/onos-install.sh
@@ -14,6 +18,7 @@ cp bin/*.sh ~
 
 # update environment variables
 
+. /etc/environment
 . ~/.bashrc
 
 # build an ONOS package
